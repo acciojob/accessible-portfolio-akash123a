@@ -1,16 +1,47 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <!-- Main Heading -->
+    <header>
+        <h1 role="heading" aria-level="1">My Accessible Portfolio</h1>
+    </header>
 
+    <!-- Navigation Bar -->
+    <nav role="navigation">
+        <ul role="list">
+            <li role="listitem"><a href="#about">About</a></li>
+            <li role="listitem"><a href="#projects">Projects</a></li>
+            <li role="listitem"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 role="heading" aria-level="2">About Me</h2>
+        <img src="profile.jpg" alt="Photo of [Your Name]" role="img">
+        <p>I am a web developer passionate about creating accessible and user-friendly websites.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 role="heading" aria-level="2">My Projects</h2>
+        <ul role="list">
+            <li role="listitem">Portfolio Website</li>
+            <li role="listitem">E-commerce App</li>
+            <li role="listitem">Blog Platform</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <footer id="contact">
+        <h2 role="heading" aria-level="2">Contact</h2>
+        <p>Feel free to reach out via <a href="mailto:akashgupta26121999@gmail.com">email</a>.</p>
+    </footer>
 </body>
-
 </html>
